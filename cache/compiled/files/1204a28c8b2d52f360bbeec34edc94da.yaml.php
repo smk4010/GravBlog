@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/system/blueprints/config/system.yaml',
-    'modified' => 1485897057,
+    'modified' => 1490627448,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -587,6 +587,62 @@ return [
                                 'redis' => 'Redis'
                             ]
                         ],
+                        'cache.prefix' => [
+                            'type' => 'text',
+                            'size' => 'x-small',
+                            'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
+                            'help' => 'PLUGIN_ADMIN.CACHE_PREFIX_HELP',
+                            'placeholder' => 'PLUGIN_ADMIN.CACHE_PREFIX_PLACEHOLDER'
+                        ],
+                        'cache.cli_compatibility' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.CLI_COMPATIBILITY',
+                            'help' => 'PLUGIN_ADMIN.CLI_COMPATIBILITY_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'cache.lifetime' => [
+                            'type' => 'text',
+                            'size' => 'small',
+                            'append' => 'NICETIME.SECOND_PLURAL',
+                            'label' => 'PLUGIN_ADMIN.LIFETIME',
+                            'help' => 'PLUGIN_ADMIN.LIFETIME_HELP',
+                            'validate' => [
+                                'type' => 'number'
+                            ]
+                        ],
+                        'cache.gzip' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
+                            'help' => 'PLUGIN_ADMIN.GZIP_COMPRESSION_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'cache.allow_webserver_gzip' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.ALLOW_WEBSERVER_GZIP',
+                            'help' => 'PLUGIN_ADMIN.ALLOW_WEBSERVER_GZIP_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
                         'cache.memcache.server' => [
                             'type' => 'text',
                             'size' => 'medium',
@@ -635,49 +691,6 @@ return [
                             'label' => 'PLUGIN_ADMIN.REDIS_PORT',
                             'help' => 'PLUGIN_ADMIN.REDIS_PORT_HELP',
                             'placeholder' => '6379'
-                        ],
-                        'cache.prefix' => [
-                            'type' => 'text',
-                            'size' => 'x-small',
-                            'label' => 'PLUGIN_ADMIN.CACHE_PREFIX',
-                            'help' => 'PLUGIN_ADMIN.CACHE_PREFIX_HELP',
-                            'placeholder' => 'PLUGIN_ADMIN.CACHE_PREFIX_PLACEHOLDER'
-                        ],
-                        'cache.lifetime' => [
-                            'type' => 'text',
-                            'size' => 'small',
-                            'append' => 'NICETIME.SECOND_PLURAL',
-                            'label' => 'PLUGIN_ADMIN.LIFETIME',
-                            'help' => 'PLUGIN_ADMIN.LIFETIME_HELP',
-                            'validate' => [
-                                'type' => 'number'
-                            ]
-                        ],
-                        'cache.gzip' => [
-                            'type' => 'toggle',
-                            'label' => 'PLUGIN_ADMIN.GZIP_COMPRESSION',
-                            'help' => 'PLUGIN_ADMIN.GZIP_COMPRESSION_HELP',
-                            'highlight' => 0,
-                            'options' => [
-                                1 => 'PLUGIN_ADMIN.YES',
-                                0 => 'PLUGIN_ADMIN.NO'
-                            ],
-                            'validate' => [
-                                'type' => 'bool'
-                            ]
-                        ],
-                        'cache.allow_webserver_gzip' => [
-                            'type' => 'toggle',
-                            'label' => 'PLUGIN_ADMIN.ALLOW_WEBSERVER_GZIP',
-                            'help' => 'PLUGIN_ADMIN.ALLOW_WEBSERVER_GZIP_HELP',
-                            'highlight' => 0,
-                            'options' => [
-                                1 => 'PLUGIN_ADMIN.YES',
-                                0 => 'PLUGIN_ADMIN.NO'
-                            ],
-                            'validate' => [
-                                'type' => 'bool'
-                            ]
                         ]
                     ]
                 ],
@@ -1285,7 +1298,7 @@ return [
                         'custom_base_url' => [
                             'type' => 'text',
                             'size' => 'medium',
-                            'placeholder' => 'e.g. http://localhost:8080',
+                            'placeholder' => 'e.g. http://yoursite.com/yourpath',
                             'label' => 'PLUGIN_ADMIN.CUSTOM_BASE_URL',
                             'help' => 'PLUGIN_ADMIN.CUSTOM_BASE_URL_HELP'
                         ]

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/user/plugins/admin/languages/en.yaml',
-    'modified' => 1485962783,
+    'modified' => 1490627463,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -612,7 +612,7 @@ return [
             'DROPZONE_CANCEL_UPLOAD_CONFIRMATION' => 'Are you sure you want to cancel this upload?',
             'DROPZONE_DEFAULT_MESSAGE' => 'Drop your files here or <strong>click in this area</strong>',
             'DROPZONE_FALLBACK_MESSAGE' => 'Your browser does not support drag and drop file uploads.',
-            'DROPZONE_FALLBACK_TEXT' => 'Please use the fallback form below to upload your files like in the olden days.',
+            'DROPZONE_FALLBACK_TEXT' => 'Please use the fallback form below to upload your files like in the older days.',
             'DROPZONE_FILE_TOO_BIG' => 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.',
             'DROPZONE_INVALID_FILE_TYPE' => 'You can\'t upload files of this type.',
             'DROPZONE_MAX_FILES_EXCEEDED' => 'You can not upload any more files.',
@@ -638,7 +638,9 @@ return [
             'NEVER_CACHE_TWIG_HELP' => 'Only cache content and process Twig every time for pages. Ignores twig_first setting.',
             'ALLOW_WEBSERVER_GZIP' => 'Allow WebServer Gzip',
             'ALLOW_WEBSERVER_GZIP_HELP' => 'Off by default. When enabled, WebServer-configured Gzip/Deflate compression will work, but http connection will not be closed before onShutDown() event causing slower page loading',
-            'OFFLINE_WARNING' => 'The connection to the GPM cannot be established'
+            'OFFLINE_WARNING' => 'The connection to the GPM cannot be established',
+            'CLI_COMPATIBILITY' => 'CLI Compatibility',
+            'CLI_COMPATIBILITY_HELP' => 'Ensures that only non-volatile Cache drivers are used (file, redis, memcache, etc.)'
         ]
     ]
 ];

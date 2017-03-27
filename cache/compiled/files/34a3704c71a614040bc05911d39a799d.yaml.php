@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/user/plugins/admin/languages/uk.yaml',
-    'modified' => 1485962783,
+    'modified' => 1490627463,
     'data' => [
         'PLUGIN_ADMIN' => [
             'LOGIN_BTN' => 'Увійти',
@@ -131,7 +131,6 @@ return [
             'NO_PAGE_FOUND' => 'Сторінку не знайдено',
             'INVALID_PARAMETERS' => 'Неправильні параметри',
             'NO_FILES_SENT' => 'Файлів не надіслано',
-            'EXCEEDED_FILESIZE_LIMIT' => 'Перевищено обмеження на розмір файлу',
             'UNKNOWN_ERRORS' => 'Невідомі помилки',
             'UNSUPPORTED_FILE_TYPE' => 'Непідтримуваний тип файлу',
             'FILE_UPLOADED_SUCCESSFULLY' => 'Файл успішно завантажено',

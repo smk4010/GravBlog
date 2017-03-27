@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/user/plugins/feed/blueprints.yaml',
-    'modified' => 1485897065,
+    'modified' => 1490627462,
     'data' => [
         'name' => 'Feed',
-        'version' => '1.5.1',
+        'version' => '1.5.2',
         'description' => 'The **Feed** plugin is a simple yet powerful add-on that lets you view a Grav Collection as **RSS** or **Atom** news feed.',
         'icon' => 'rss',
         'author' => [

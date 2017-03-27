@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/system/config/system.yaml',
-    'modified' => 1485897057,
+    'modified' => 1490627449,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -103,6 +103,7 @@ return [
             ],
             'driver' => 'auto',
             'prefix' => 'g',
+            'cli_compatibility' => false,
             'lifetime' => 604800,
             'gzip' => false,
             'allow_webserver_gzip' => false,

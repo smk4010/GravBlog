@@ -132,16 +132,16 @@ class __TwigTemplate_a1b34049a6ebee22947401605ef9912e5c14522c954163344205657f58a
                 foreach ($context['_seq'] as $context["label"] => $context["item"]) {
                     // line 46
                     echo "                        ";
-                    if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->authorize(array(0 => ("admin." . $this->getAttribute($context["item"], "route", array())), 1 => "admin.super"))) {
+                    if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->authorize(array(0 => (($this->getAttribute($context["item"], "authorize", array())) ? ($this->getAttribute($context["item"], "authorize", array())) : (("admin." . (($this->getAttribute($context["item"], "location", array())) ? ($this->getAttribute($context["item"], "location", array())) : ($this->getAttribute($context["item"], "route", array())))))), 1 => "admin.super"))) {
                         // line 47
                         echo "                            <li class=\"";
-                        echo (((($context["location"] ?? null) == $this->getAttribute($context["item"], "route", array()))) ? ("selected") : (""));
+                        echo (((($context["location"] ?? null) == (($this->getAttribute($context["item"], "location", array())) ? ($this->getAttribute($context["item"], "location", array())) : ($this->getAttribute($context["item"], "route", array()))))) ? ("selected") : (""));
                         echo "\">
                                 <a href=\"";
                         // line 48
                         echo twig_escape_filter($this->env, ($context["base_url_relative"] ?? null), "html", null, true);
                         echo "/";
-                        echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "route", array()), "html", null, true);
+                        echo twig_escape_filter($this->env, (($this->getAttribute($context["item"], "route", array())) ? ($this->getAttribute($context["item"], "route", array())) : ($this->getAttribute($context["item"], "location", array()))), "html", null, true);
                         echo "\">
                                     <i class=\"fa fa-fw ";
                         // line 49
@@ -315,9 +315,9 @@ class __TwigTemplate_a1b34049a6ebee22947401605ef9912e5c14522c954163344205657f58a
                 {% endif %}
                 {% if grav.twig.plugins_hooked_nav %}
                     {% for label, item in grav.twig.plugins_hooked_nav %}
-                        {% if authorize(['admin.' ~ item.route, 'admin.super']) %}
-                            <li class=\"{{ (location == item.route) ? 'selected' : '' }}\">
-                                <a href=\"{{ base_url_relative }}/{{ item.route }}\">
+                        {% if authorize([item.authorize ?: ('admin.' ~ (item.location ?: item.route)), 'admin.super']) %}
+                            <li class=\"{{ (location == (item.location ?: item.route)) ? 'selected' : '' }}\">
+                                <a href=\"{{ base_url_relative }}/{{ item.route ?: item.location }}\">
                                     <i class=\"fa fa-fw {{ item.icon }}\"></i>
                                     <em>{{ label|tu }}</em>
                                 </a>

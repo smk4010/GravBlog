@@ -2,23 +2,23 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav/user/config/site.yaml',
-    'modified' => 1485897060,
+    'modified' => 1490626806,
     'data' => [
-        'title' => 'Receptar',
-        'description' => 'A very delicious blog.',
+        'title' => 'Farmchinski Wedding',
+        'description' => 'The Wedding of Hillary Farmer & Scott Kuchinski',
         'author' => [
-            'name' => 'Grav',
-            'email' => 'joe@test.com',
-            'url' => 'http://getgrav.org/',
+            'name' => 'The Farmchinskis',
+            'email' => 'rsvp@farminskiwedding.com',
+            'url' => 'http://farmchinskiwedding.com',
             'logo' => NULL,
-            'gravatar' => 'contact@getgrav.org',
-            'description' => 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
+            'gravatar' => 'rsvp@farminskiwedding.com',
+            'description' => 'The Wedding of Hillary Farmer & Scott Kuchinski.  June 17, 2017.  Fiddle Lake Farm, Thompson, Pennsylvania.'
         ],
         'blog' => [
             'route' => ''
         ],
         'metadata' => [
-            'description' => 'Receptar is a minimal Theme designed for blogger, converted to Grav.'
+            'description' => 'The Wedding of Hillary Farmer & Scott Kuchinski.'
         ],
         'taxonomies' => [
             0 => 'category',
@@ -30,32 +30,7 @@ return [
             'striptags' => true
         ],
         'global_featured_image' => 'featured.jpg',
-        'social' => [
-            0 => [
-                'text' => 'facebook',
-                'url' => 'http://www.facebook.com/getgrav'
-            ],
-            1 => [
-                'text' => 'twitter',
-                'url' => 'http://www.twitter.com/getgrav'
-            ],
-            2 => [
-                'text' => 'google-plus',
-                'url' => 'http://www.plus.google.com/getgrav'
-            ],
-            3 => [
-                'text' => 'linkedin',
-                'url' => 'http://www.linkedin.com/getgrav'
-            ],
-            4 => [
-                'text' => 'youtube-play',
-                'url' => 'http://www.youtube.com/getgrav'
-            ],
-            5 => [
-                'text' => 'home',
-                'url' => 'http://www.getgrav.org'
-            ]
-        ],
+        'social' => NULL,
         'slider' => [
             0 => [
                 'image' => 'slide3.jpg',

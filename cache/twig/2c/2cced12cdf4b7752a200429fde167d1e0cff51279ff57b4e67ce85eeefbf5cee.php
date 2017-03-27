@@ -205,33 +205,62 @@ class __TwigTemplate_b0b255eaa075015032e2432addf4ff12ed52693c6a42182ff59db8f80d4
         }
         foreach ($context['_seq'] as $context["_key"] => $context["button"]) {
             // line 52
-            echo "      <button
-            ";
+            echo "      ";
+            if ($this->getAttribute($context["button"], "outerclasses", array(), "any", true, true)) {
+                echo "<div class=\"";
+                echo $this->getAttribute($context["button"], "outerclasses", array());
+                echo "\">";
+            }
             // line 53
+            echo "          ";
+            if ($this->getAttribute($context["button"], "url", array())) {
+                // line 54
+                echo "              <a href=\"";
+                echo (((is_string($__internal_f49bb76467177061a65f20a5caffe266de0717683b2a4966ef0302d3bbbce24d = $this->getAttribute($context["button"], "url", array())) && is_string($__internal_deba8ab49bbc0e8975cb239b7c95f5f8bc9ac1d93ef01c37fbfca8dc7e758887 = "http") && ('' === $__internal_deba8ab49bbc0e8975cb239b7c95f5f8bc9ac1d93ef01c37fbfca8dc7e758887 || 0 === strpos($__internal_f49bb76467177061a65f20a5caffe266de0717683b2a4966ef0302d3bbbce24d, $__internal_deba8ab49bbc0e8975cb239b7c95f5f8bc9ac1d93ef01c37fbfca8dc7e758887)))) ? ($this->getAttribute($context["button"], "url", array())) : ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc($this->getAttribute($context["button"], "url", array()))));
+                echo "\">
+          ";
+            }
+            // line 56
+            echo "          <button
+                ";
+            // line 57
             if ($this->getAttribute($context["button"], "id", array())) {
                 echo "id=\"";
                 echo $this->getAttribute($context["button"], "id", array());
                 echo "\"";
             }
-            // line 54
-            echo "            ";
+            // line 58
+            echo "                ";
             $this->displayBlock('button_classes', $context, $blocks);
-            // line 57
-            echo "            ";
+            // line 61
+            echo "                ";
             if ($this->getAttribute($context["button"], "disabled", array())) {
                 echo "disabled=\"disabled\"";
             }
-            // line 58
-            echo "            type=\"";
+            // line 62
+            echo "                type=\"";
             echo (($this->getAttribute($context["button"], "type", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($context["button"], "type", array()), "submit")) : ("submit"));
             echo "\"
-        >
-            ";
-            // line 60
+            >
+                ";
+            // line 64
             echo _twig_default_filter($this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate($this->getAttribute($context["button"], "value", array())), "Submit");
             echo "
-        </button>
-  ";
+          </button>
+          ";
+            // line 66
+            if ($this->getAttribute($context["button"], "url", array())) {
+                // line 67
+                echo "              </a>
+          ";
+            }
+            // line 69
+            echo "      ";
+            if ($this->getAttribute($context["button"], "outerclasses", array(), "any", true, true)) {
+                echo "</div>";
+            }
+            // line 70
+            echo "  ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
             $context['loop']['first'] = false;
@@ -244,15 +273,15 @@ class __TwigTemplate_b0b255eaa075015032e2432addf4ff12ed52693c6a42182ff59db8f80d4
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['button'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 63
+        // line 71
         echo "
   ";
-        // line 64
+        // line 72
         $this->displayBlock('inner_markup_buttons_end', $context, $blocks);
-        // line 67
+        // line 75
         echo "
   ";
-        // line 68
+        // line 76
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->nonceFieldFunc("form", "form-nonce");
         echo "
 </form>
@@ -291,20 +320,20 @@ class __TwigTemplate_b0b255eaa075015032e2432addf4ff12ed52693c6a42182ff59db8f80d4
   ";
     }
 
-    // line 54
+    // line 58
     public function block_button_classes($context, array $blocks = array())
     {
-        // line 55
-        echo "            class=\"";
+        // line 59
+        echo "                class=\"";
         echo (($this->getAttribute(($context["button"] ?? null), "classes", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute(($context["button"] ?? null), "classes", array()), "button")) : ("button"));
         echo "\"
-            ";
+                ";
     }
 
-    // line 64
+    // line 72
     public function block_inner_markup_buttons_end($context, array $blocks = array())
     {
-        // line 65
+        // line 73
         echo "  </div>
   ";
     }
@@ -321,7 +350,7 @@ class __TwigTemplate_b0b255eaa075015032e2432addf4ff12ed52693c6a42182ff59db8f80d4
 
     public function getDebugInfo()
     {
-        return array (  308 => 65,  305 => 64,  298 => 55,  295 => 54,  290 => 48,  287 => 47,  282 => 45,  277 => 33,  273 => 30,  266 => 29,  263 => 28,  256 => 68,  253 => 67,  251 => 64,  248 => 63,  231 => 60,  225 => 58,  220 => 57,  217 => 54,  211 => 53,  208 => 52,  191 => 51,  188 => 50,  186 => 47,  183 => 46,  181 => 45,  178 => 44,  176 => 43,  173 => 42,  159 => 41,  151 => 40,  148 => 39,  145 => 38,  142 => 37,  139 => 36,  122 => 35,  119 => 34,  117 => 33,  113 => 31,  110 => 28,  104 => 27,  98 => 26,  94 => 25,  90 => 24,  87 => 23,  83 => 21,  81 => 20,  78 => 19,  76 => 18,  73 => 17,  66 => 15,  63 => 14,  60 => 13,  56 => 12,  53 => 11,  51 => 10,  49 => 9,  47 => 8,  38 => 5,  30 => 3,  27 => 2,  25 => 1,);
+        return array (  337 => 73,  334 => 72,  327 => 59,  324 => 58,  319 => 48,  316 => 47,  311 => 45,  306 => 33,  302 => 30,  295 => 29,  292 => 28,  285 => 76,  282 => 75,  280 => 72,  277 => 71,  263 => 70,  258 => 69,  254 => 67,  252 => 66,  247 => 64,  241 => 62,  236 => 61,  233 => 58,  227 => 57,  224 => 56,  218 => 54,  215 => 53,  208 => 52,  191 => 51,  188 => 50,  186 => 47,  183 => 46,  181 => 45,  178 => 44,  176 => 43,  173 => 42,  159 => 41,  151 => 40,  148 => 39,  145 => 38,  142 => 37,  139 => 36,  122 => 35,  119 => 34,  117 => 33,  113 => 31,  110 => 28,  104 => 27,  98 => 26,  94 => 25,  90 => 24,  87 => 23,  83 => 21,  81 => 20,  78 => 19,  76 => 18,  73 => 17,  66 => 15,  63 => 14,  60 => 13,  56 => 12,  53 => 11,  51 => 10,  49 => 9,  47 => 8,  38 => 5,  30 => 3,  27 => 2,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -385,16 +414,24 @@ class __TwigTemplate_b0b255eaa075015032e2432addf4ff12ed52693c6a42182ff59db8f80d4
   {% endblock %}
 
   {% for button in form.buttons %}
-      <button
-            {% if button.id %}id=\"{{ button.id }}\"{% endif %}
-            {% block button_classes %}
-            class=\"{{ button.classes|default('button') }}\"
-            {% endblock %}
-            {% if button.disabled %}disabled=\"disabled\"{% endif %}
-            type=\"{{ button.type|default('submit') }}\"
-        >
-            {{ button.value|t|default('Submit') }}
-        </button>
+      {% if button.outerclasses is defined %}<div class=\"{{ button.outerclasses }}\">{% endif %}
+          {% if button.url %}
+              <a href=\"{{ button.url starts with 'http' ? button.url : url(button.url) }}\">
+          {% endif %}
+          <button
+                {% if button.id %}id=\"{{ button.id }}\"{% endif %}
+                {% block button_classes %}
+                class=\"{{ button.classes|default('button') }}\"
+                {% endblock %}
+                {% if button.disabled %}disabled=\"disabled\"{% endif %}
+                type=\"{{ button.type|default('submit') }}\"
+            >
+                {{ button.value|t|default('Submit') }}
+          </button>
+          {% if button.url %}
+              </a>
+          {% endif %}
+      {% if button.outerclasses is defined %}</div>{% endif %}
   {% endfor %}
 
   {% block inner_markup_buttons_end %}
