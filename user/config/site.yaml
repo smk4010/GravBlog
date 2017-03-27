@@ -1,41 +1,42 @@
-title: Farmchinski Wedding
-description: "The Wedding of Hillary Farmer & Scott Kuchinski"
+title: 'Farmchinski Wedding'
+default_lang: en
 author:
-  name: The Farmchinskis
-  email: 'rsvp@farminskiwedding.com'
-  url: http://farmchinskiwedding.com
-  logo:
+  name: 'The Farmchinskis'
+  email: rsvp@farminskiwedding.com
+  url: 'http://farmchinskiwedding.com'
   gravatar: rsvp@farminskiwedding.com
-  description: "The Wedding of Hillary Farmer & Scott Kuchinski.  June 17, 2017.  Fiddle Lake Farm, Thompson, Pennsylvania."
+  description: 'The Wedding of Hillary Farmer & Scott Kuchinski.  June 17, 2017.  Fiddle Lake Farm, Thompson, Pennsylvania.'
+taxonomies:
+  - category
+  - tag
+  - month
+metadata:
+  description: 'The Wedding of Hillary Farmer & Scott Kuchinski.'
+summary:
+  enabled: true
+  format: short
+  size: 100
+  delimiter: '==='
+  striptags: true
 blog:
   route: ''
-metadata:
-    description: 'The Wedding of Hillary Farmer & Scott Kuchinski.'
-taxonomies: [category,tag,month]
-
-summary:
-  size: 100
-  striptags: true
-
-# Image must be uploaded to your theme /images/ directory.
+description: 'The Wedding of Hillary Farmer & Scott Kuchinski'
 global_featured_image: featured.jpg
-
-social:
-
 slider:
-  - image: slide3.jpg
-    title: A very delicious blog
-    url: "#"
-  - image: slide1.jpg
-    title: Duis autem
-    url: "#"
-  - image: slide2.jpg
-    title: Pumpkin recipe
-    url: "#"
-
+  -
+    image: slide3.jpg
+    title: 'A very delicious blog'
+    url: '#'
+  -
+    image: slide1.jpg
+    title: 'Duis autem'
+    url: '#'
+  -
+    image: slide2.jpg
+    title: 'Pumpkin recipe'
+    url: '#'
 menu:
-  - url: error
-    text: Error Page
-
-# Copyright
-copyright: Designed and developed by <a title="WebMan WordPress Themes" href="http://www.webmandesign.eu/"><strong>WebMan Design</strong></a>, Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>
+  -
+    url: error
+    text: 'Error Page'
+copyright: 'poop'

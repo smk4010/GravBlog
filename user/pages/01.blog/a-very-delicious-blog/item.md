@@ -1,5 +1,5 @@
 ---
-title: A very delicious blog
+title: test
 date: 14:55 08/31/2014
 taxonomy:
     category: cakes, cookies
